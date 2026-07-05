@@ -1,5 +1,5 @@
 var reduce = function (nums, fn, init) {
-  let sum = 0;
+  let sum = init;
   for (let i = 0; i < nums.length; i++) {
 
 

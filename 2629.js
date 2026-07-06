@@ -14,4 +14,4 @@ var compose = function(functions) {
 };
 
 
-console.log(functions = [x => x + 1, x => x * x, x => 2 * x], x = 4);
+// console.log(functions = [x => x + 1, x => x * x, x => 2 * x], x = 4);

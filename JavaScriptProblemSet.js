@@ -4,16 +4,13 @@
 // Input: a = 5, b = 10Output: a = 10, b = 5
 // Hint: Try using destructuring or arithmetic operators.
 
-
-
 function swipe(a, b) {
-  [a,b] = [b,a]
-    return {a,b}
+  [a, b] = [b, a];
+  return { a, b };
 }
 const a = 5;
 const b = 10;
 // console.log(swipe(a ,b));
-
 
 // Problem 2: Check Even or Odd  [Easy]
 // Description: Write a function isEven(n) that returns true if a number is even, and false if it is odd.
@@ -21,13 +18,31 @@ const b = 10;
 // Input: 4  → Output: trueInput: 7  → Output: false
 // Hint: Use the modulus (%) operator.
 
-
 function isEven(n) {
-    
-    if (n % 2 === 0) {
-        return true
-    } else {
-        return false
-    }
+  if (n % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 // console.log(isEven(6));
+
+// Problem 3: Find the Largest of Three Numbers  [Easy]
+// Description: Write a function largest(a, b, c) that returns the largest of three numbers.
+// Example:
+// Input: 3, 7, 5  → Output: 7
+// Hint: Use Math.max() or if-else conditions.
+
+function largestNumber(...numbers) {
+  // return Math.max(a,b,c)
+  let largest = 0;
+  for (let n of numbers) {
+    if (largest < n) {
+      largest = n;
+    }
+  }
+
+  return largest
+}
+
+console.log(largestNumber(3, 7, 5));

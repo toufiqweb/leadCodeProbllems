@@ -33,16 +33,30 @@ function isEven(n) {
 // Input: 3, 7, 5  → Output: 7
 // Hint: Use Math.max() or if-else conditions.
 
-function largestNumber(...numbers) {
-  // return Math.max(a,b,c)
-  let largest = 0;
-  for (let n of numbers) {
-    if (largest < n) {
-      largest = n;
-    }
-  }
+// function largestNumber(...numbers) {
+//   // return Math.max(a,b,c)
+//   let largest = 0;
+//   for (let n of numbers) {
+//     if (largest < n) {
+//       largest = n;
+//     }
+//   }
 
-  return largest
+//   return largest
+// }
+
+// console.log(largestNumber(3, 7, 5));
+
+// Problem 4: Celsius to Fahrenheit  [Easy]
+// Description: Write a function toFahrenheit(celsius) that converts a Celsius temperature to Fahrenheit.
+// Example:
+// Input: 0   → Output: 32Input: 100 → Output: 212
+// Hint: Formula: (C × 9/5) + 32
+
+function CelsiusToFahrenheit(c) {
+  const f = (c * 9) / 5 + 32;
+
+  return f;
 }
 
-console.log(largestNumber(3, 7, 5));
+console.log(CelsiusToFahrenheit(0));

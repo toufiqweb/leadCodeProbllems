@@ -61,7 +61,6 @@ function CelsiusToFahrenheit(c) {
 
 // console.log(CelsiusToFahrenheit(0));
 
-
 // Problem 5: Check Positive, Negative or Zero  [Easy]
 // Description: Write a function checkSign(n) that returns 'positive', 'negative', or 'zero' based on the value of n.
 // Example:
@@ -69,15 +68,14 @@ function CelsiusToFahrenheit(c) {
 // Hint: Use if-else if-else statements.
 
 function checkSign(n) {
-  
   if (n > 0) {
-    return "positive"
-  }else if (n < 0) {
-    return "negative"
+    return "positive";
+  } else if (n < 0) {
+    return "negative";
   }
 
   if (n === 0) {
-    return "zero"
+    return "zero";
   }
 }
 
@@ -90,10 +88,36 @@ function checkSign(n) {
 // Hint: Use split(''), reverse(), and join('').
 
 function reverseString(str) {
-  
-  let reverse = str.split('').reverse().join('')
-  return reverse
+  let reverse = str.split("").reverse().join("");
+  return reverse;
 }
 
-
 // console.log(reverseString("world"));
+
+function processData(input) {
+  //Enter your code here
+
+  if (input % 2 === 0) {
+    // console.log("Even");
+  }
+  if (!input % 2 === 0) {
+    // console.log("Odd");
+  }
+}
+
+// get the largest two number
+function processData(input) {
+    //Enter your code here
+    const [a , b] = input.trim().split(" ").map(Number)
+  
+  if( a> b){
+    console.log(a);
+  }else if( a< b){
+    console.log(b);
+  }else{
+    console.log("Equal");
+  }
+  
+} 
+
+processData("10 25")
